@@ -100,8 +100,8 @@ if __name__ == '__main__':
     if not os.path.isfile(ckp_path):
         download_weights(ckp_path, args.size)
         
-    checkpoint = torch.load(ckp_path, map_location=device)
-    model.load_state_dict(checkpoint)
+    #checkpoint = torch.load(ckp_path, map_location=device)
+    #model.load_state_dict(checkpoint)
 
     model.eval()
 
